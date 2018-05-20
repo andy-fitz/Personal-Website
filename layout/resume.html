@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8" >
+		<title>Andrew Fitzgerald</title>
+		<link rel = "stylesheet" type = "text/css" href = "../style/resume.css">
+	</head>
+	<body>
+	<section class = "abovefold">
+	
+	</section>
+	<section class = "margined">
+		<div class = "details_box">
+			<h1>Software Developer</h1>
+			<img class = "phonePhoto" src = "../images/photo.JPG"  height = "100" width = "100"/></br>
+			Andrew Fitzgerald</br>
+			andrew.fitzgerald@ucdconnect.ie</br>
+			087 2613052</br>
+			
+			<p class = "intro">Hello, I'm Andy. I have just complete year three of my computer science degree
+			in University College Dublin. Something about computers. Something about sailing. Some other shit. blahh
+			de blahh blahh</p>
+		</div>
+		
+		<h3>Resume</h3>
+		<hr/>
+		<h5 class = "expandable">Education</h5>
+		<div class = "content">
+			<ul class = "education">
+				<li>
+					<h4 class = "expandable">Leaving Certificate / Secondary Education   -   Points: 545 </h4>
+					<ul class = "content">
+						<li>Maths</li>
+						<li>Technical Graphics</li>
+						<li>Physics</li>
+						<li>Applied Mathematics</li>
+						<li>Accounting</li>
+						<li>English</li>
+						<li>French</li>
+						<li>Irish</li>
+					</ul>
+				</li>
+				<li>
+					<h4 class = "expandable">University   -  Current GPA: 3.83 (1st Class Honours)</h4>
+					<ul class = "content">
+						<h5>Stage 3</h5>
+						<li>Program Construction 1</li>
+						<li>Introduction to AI</li>
+						<li>Networks + Internet Systems</li>
+						<li>Object-Oriented Programming</li>
+						<li>Graphs + Networks</li>
+						<li>Processor Design</li>
+						<li>Web Design</li>
+						<li>Foundations of Computing</li>
+						<li>Software Engineering Project 3</li>
+						<li>Computer Graphics</li>
+						<li>Information Theory</li>
+						
+						<h5>Stage 2</h5>
+						<li>Data Structures and Algorithms</li>
+						<li>Databases and Information Systems</li>
+						<li>Discrete Maths for Comp Sci</li>
+						<li>Introduction to Java</li>
+						<li>Data Structures and Algorithms</li>
+						<li>Software Engineering Project 2</li>
+						<li>Intro to Operating Systems</li>
+						<li>Intro to Functional Programming</li>
+						<li>Linear Algebra 3</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<hr/>
+		<h5 class = "expandable">Projects</h5>
+		<div class = "content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+			ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<hr/>
+		<h5 class = "expandable">Qualifications</h5>
+		<div class = "content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+			ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+			laboris nisi ut aliquip ex ea commodo consequat.</p>		
+		</div>
+		<hr/>
+		<h5 class = "expandable">Skills</h5>
+		<div class = "content">
+			<ul>
+				<li>Java</li>
+				<li>C++</li>
+				<li>C</li>
+				<li>C#</li>
+				<li>Ruby</li>
+				<li>SQL</li>
+				<li>Scheme</li>
+				<li>CSS</li>
+				<li>HTML</li>
+				<li>Javascript</li>
+				<li>PHP</p>
+			</ul>
+		</div>
+		
+	</section>
+	</body>
+	<script>
+		// Adding listeners to section headings
+		var sections = document.getElementsByClassName("expandable");
+		for(var i = 0; i < sections.length; i++){
+			sections[i].addEventListener("click", function(){
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if(content.style.maxHeight){
+				content.style.maxHeight = null;
+			}else{
+				content.style.maxHeight = content.scrollHeight + "px";
+				parent = content.parentNode;
+				while(parent.nodeName != "BODY"){
+					console.log(parent.className);
+					if(parent.className === "content"){
+						console.log("inside if");
+						parent.style.maxHeight = parent.scrollHeight + "10px";
+					}
+					parent = parent.parentNode;
+				}
+			}
+			});
+		}
+		 
+		function expand(){
+			var para = document.createElement("p");
+			var node = document.createTextNode("Some dynamically added text");
+			para.appendChild(node);
+			sections[0].appendChild(para);
+		}
+	</script>
+</html>
