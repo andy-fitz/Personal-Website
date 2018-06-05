@@ -73,20 +73,20 @@
 		<h5 class = "expandable">Projects</h5>
 		<div class = "content">
 					<ul>
-						<li>
+						<li class = "project">
 							<h2>Monopoly</h2>
-							<p>In stage 2 of computer science I completed a module called Software Engineering project 2. In this module we were tasked
+							<p class = "proj_text">In stage 2 of computer science I completed a module called Software Engineering project 2. In this module we were tasked
 							   with developing the board game, Monopoly. This was undertaken as part of a team of 3.
 							</p>
 						</li>
-						<li>
+						<li class = "project">
 							<h2>Monopoly Bot</h2>
-							<p>We also developed a bot which could play monopoly. 
+							<p class = "proj_text">We also developed a bot which could play monopoly. 
 							</p>
 						</li>
-						<li>
+						<li class = "project">
 							<h2>Panopoly</h2></br>
-							<p>This year I completed a module called Software Engineering Project 3. The main
+							<p class = "proj_text">This year I completed a module called Software Engineering Project 3. The main
 							component of this module was to design and implement a procedurally generated version of 
 							the classic borad game: Monopoly. This project was undertaken as part of a team of 4. I learned 
 							a great deal about agile developement and software design patterns during this module. Our resulting software 
@@ -108,11 +108,12 @@
 							</ul>							
 							</p>
 						</li>
-						<li>
+						<li class = "project">
 							<h2>Floatilla</h2></br>
-							<p>Last summer I started developing a game in unity. I learned a great deal about game develepment, game phyics, graphics and
+							<p class = "proj_text">Last summer I started developing a game in unity. I learned a great deal about game develepment, game phyics, graphics and
 							   C#. The game is set in a world which is flooding. Its down to the player to survive by building a boat and scavenging the ocean 
 							   for resourcers while fighting off other players.
+							   <img class = "proj_img" src = "../images/unityProject.PNG" height = "270" width = "480" />
 							<ul>
 								<li>C#</li>
 								<li>Unity</li>
@@ -122,7 +123,7 @@
 								<li>Blender</li>
 							</ul>	
 							</p>
-							<img class = "proj_img" src = "../images/unityProject.PNG" height = "270" width = "480" />
+							
 						</li>
 					</ul>
 		</div>
@@ -254,8 +255,10 @@
 		
 		<h2>Contact Me</h2>
 		
-		<form>
-		<textarea name="Message" cols="40" rows="5"></textarea></br>
+		<form action = "contact.php" method = "post">
+		Name:<br><input type = "text" name = "name"><br>
+		Email:<br><input type = "text" name = "email"><br>
+		Message:<br><textarea name="Message" cols="40" rows="5"></textarea><br>
 		<input class = "btn" type = "submit" value = "Send">
 		</form>
 		

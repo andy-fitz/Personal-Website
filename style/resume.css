@@ -95,7 +95,7 @@ h5{
 
 .projectsInfo{
 	display: block;
-	height: 200px;
+	height: 10px;
 }
 
 ul{
@@ -107,18 +107,28 @@ ul{
 	width: 40px;
 	background-color: black;
 	border-radius: 10px 25px 10px 25px;
+	margin: 0 auto;
 }
 
 table{
 	width: 100%;
 }
 
-td{
-	text-align: center;
-}
-
 .proj_img{
 	float: right;
+	margin: 10px;
+}
+
+.project{
+	border: 1px solid black;
+	margin-top: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.proj_text{
+	margin: 0px 10px;
+	
 }
 
 
