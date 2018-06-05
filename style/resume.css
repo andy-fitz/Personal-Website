@@ -119,6 +119,11 @@ table{
 	margin: 10px;
 }
 
+.proj_vid{
+	float: right;
+	margin: 10px;
+}
+
 .project{
 	border: 1px solid black;
 	margin-top: 10px;
