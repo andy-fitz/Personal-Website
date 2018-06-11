@@ -7,12 +7,13 @@
 	</head>
 	<body>
 	<section class = "abovefold">
+	<a href = "http://www.linkedin.com/in/andrew-fitzgerald-2b0847164" ><p class = "link">LinkedIn</p></a>
 	
 	</section>
 	<section class = "margined">
 		<div class = "details_box">
 			<h1>Software Developer</h1>
-			<img class = "phonePhoto" src = "../images/photo.JPG"  height = "100" width = "100"/></br>
+			<img class = "phonePhoto" src = "../images/photo.JPG"  height = "150" width = "150"/></br>
 			Andrew Fitzgerald</br>
 			andrew.fitzgerald@ucdconnect.ie</br>
 			
@@ -24,7 +25,7 @@
 		<h2>Resume</h2>
 		<hr/>
 		<div class = "expandable">
-			<img class = "icon" src = "../icons/mortarboard.png">
+			<img class = "icon" src = "../images/mortarboard.png">
 			<h3>Education</h3>
 		</div>
 		<div class = "content">
@@ -74,7 +75,7 @@
 		</div>
 		<hr/>
 		<div class = "expandable">
-			<img class = "icon" src = "../icons/idea.png">
+			<img class = "icon" src = "../images/idea.png">
 			<h3>Projects</h3>
 		</div>
 		<div class = "content">
@@ -196,7 +197,7 @@
 		</div>
 		<hr/>
 		<div class = "expandable">
-			<img class = "icon" src = "../icons/plumber.png">
+			<img class = "icon" src = "../images/plumber.png">
 			<h3>Skills</h3>
 		</div>	
 		<div class = "content">
@@ -317,7 +318,7 @@
 		</div>
 		<hr/>
 		<div class = "expandable">
-			<img class = "icon" src = "../icons/id-card.png">
+			<img class = "icon" src = "../images/id-card.png">
 			<h3>Other Noteworthy things</h3>
 		</div>
 		<div class = "content">
@@ -378,9 +379,7 @@
 				content.style.maxHeight = content.scrollHeight + "px";
 				parent = content.parentNode;
 				while(parent.nodeName != "BODY"){
-					console.log(parent.className);
 					if(parent.className === "content"){
-						console.log("inside if");
 						parent.style.maxHeight = parent.scrollHeight + "10px";
 					}
 					parent = parent.parentNode;
