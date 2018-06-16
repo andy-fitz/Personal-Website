@@ -69,6 +69,15 @@ h5{
 	font-family: openSansRegular;
 	font-weight: normal;
 }
+
+.education{
+	list-style-type: none;
+}
+
+.projects{
+	list-style-type: none;
+}
+
 .phonePhoto{
 	transform: rotate(90deg);
 	border: 1px solid black;
@@ -125,6 +134,20 @@ ul{
 
 table{
 	width: 100%;
+}
+
+dl{
+	text-align: left;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+dt{
+	color: #F39C12;
+	font-weight: bold;
 }
 
 .proj_img{
