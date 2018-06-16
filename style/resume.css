@@ -202,6 +202,29 @@ a{
 	text-decoration: none;
 }
 
+.proj_link{
+	color: #F39C12;
+}
+/* unvisited link */
+.proj_link:link{
+    color: #F39C12;
+}
+
+/* visited link */
+.proj_link:visited{
+    color: #F39C12;
+}
+
+/* mouse over link */
+.proj_link:hover{
+    color: #c0d6f7;
+}
+
+/* selected link */
+.proj_link:active{
+    color: #F39C12;
+}
+
 @media only screen and (max-device-width: 800px) {
 
 .margined{
